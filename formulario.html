@@ -15,19 +15,24 @@
   <p>Genera una tabla con los repos de cualquier persona!</p> 
 </div>
   
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="form-group">
-        <label for="usr">Usuario:</label>
-        <input type="text" id="usuario" class="form-control" placeholder="ej: Jannogueira">
-        <br>
-        <button type="button" class="btn btn-primary">Buscar</button>
-      </div>
-     
+<div class="container mt-5">
+  <div class="col-sm-4">
+    <div class="form-group">
+      <label for="usr">Usuario:</label>
+      <input type="text" id="usuarioTxt" class="form-control" placeholder="ej: Jannogueira">
+      <br>
+      <button type="button" id="buscarBtn" class="btn btn-primary">Buscar</button>
     </div>
+    <div id="tablaRepos" class="mt-4"></div>
   </div>
 </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Script personalizado -->
+    <script src="busquedaUsuario.js"></script>
 
 </body>
 </html>
